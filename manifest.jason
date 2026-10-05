@@ -1,0 +1,26 @@
+{
+  "name": "Verbos Irregulares Inglés",
+  "short_name": "Verbos",
+  "description": "Aplicación para estudiar y practicar verbos irregulares en inglés",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f7fb",
+  "theme_color": "#2563eb",
+  "lang": "es-ES",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
