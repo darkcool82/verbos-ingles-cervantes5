@@ -1,0 +1,561 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:#f4f7fb;
+
+    color:#222;
+
+    min-height:100vh;
+}
+
+/* ==========================
+   CONTENEDOR
+========================== */
+
+.container{
+
+    max-width:1300px;
+
+    margin:0 auto;
+
+    padding:20px;
+}
+
+/* ==========================
+   CABECERA
+========================== */
+
+header{
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+header h1{
+
+    color:#1d4ed8;
+
+    margin-bottom:5px;
+}
+
+.subtitulo{
+
+    color:#666;
+}
+
+/* ==========================
+   PANELES
+========================== */
+
+.panel{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:16px;
+
+    margin-bottom:15px;
+
+    box-shadow:
+        0 2px 10px
+        rgba(0,0,0,0.08);
+}
+
+.panel-principal{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    align-items:center;
+}
+
+/* ==========================
+   BOTONES
+========================== */
+
+button{
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:12px 18px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:0.25s;
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+}
+
+.btn-principal{
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:1rem;
+}
+
+#btnComenzar{
+
+    background:#16a34a;
+
+    color:white;
+}
+
+#btnRepetirErrores{
+
+    background:#f59e0b;
+
+    color:white;
+}
+
+#btnExportarErrores{
+
+    background:#dc2626;
+
+    color:white;
+}
+
+#btnExportarResultados{
+
+    background:#7c3aed;
+
+    color:white;
+}
+
+#btnHistorico{
+
+    background:#0284c7;
+
+    color:white;
+}
+
+.btn-instalar{
+
+    background:#7c3aed;
+
+    color:white;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+input[type=file]{
+
+    width:100%;
+}
+
+input[type=number]{
+
+    padding:10px;
+
+    width:120px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+}
+
+input[type=text]{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:1rem;
+}
+
+/* placeholder gris suave */
+
+input::placeholder{
+
+    color:#b5b5b5;
+}
+
+/* ==========================
+   CONFIG
+========================== */
+
+.config{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:15px;
+}
+
+/* ==========================
+   HOJAS
+========================== */
+
+#listaHojas{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fill,minmax(140px,1fr));
+
+    gap:10px;
+}
+
+.hoja-item{
+
+    background:#f7f9fc;
+
+    border:1px solid #d8dce6;
+
+    border-radius:8px;
+
+    padding:10px;
+}
+
+.hoja-item:hover{
+
+    background:#eef4ff;
+}
+
+/* ==========================
+   PREGUNTAS
+========================== */
+
+.pregunta{
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    box-shadow:
+        0 2px 6px
+        rgba(0,0,0,0.05);
+}
+
+.pregunta h3{
+
+    margin-bottom:12px;
+
+    color:#1f2937;
+}
+
+/* ==========================
+   FILA DE VERBOS
+========================== */
+
+.fila-verbos{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:flex-start;
+
+    flex-wrap:wrap;
+}
+
+.campo{
+
+    width:220px;
+}
+
+/* ==========================
+   CORRECCIONES
+========================== */
+
+.correcto-input{
+
+    background:#d8ffdf;
+
+    border:2px solid #16a34a;
+}
+
+.incorrecto-input{
+
+    background:#ffe0e0;
+
+    border:2px solid #dc2626;
+}
+
+.error-correccion{
+
+    color:#dc2626;
+
+    font-weight:bold;
+
+    margin-top:4px;
+
+    min-height:20px;
+}
+
+/* ==========================
+   RESULTADOS
+========================== */
+
+#resultado{
+
+    text-align:center;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+}
+
+.resultado-box{
+
+    background:#eff6ff;
+
+    border:2px solid #1d4ed8;
+
+    border-radius:12px;
+
+    padding:15px;
+}
+
+/* ==========================
+   TEMPORIZADOR
+========================== */
+
+#temporizador{
+
+    text-align:center;
+
+    font-size:1.3rem;
+
+    font-weight:bold;
+
+    color:#dc2626;
+
+    margin-bottom:10px;
+}
+
+/* ==========================
+   HISTÓRICO
+========================== */
+
+.historial-item{
+
+    border-bottom:1px solid #ddd;
+
+    padding:6px 0;
+}
+
+/* ==========================
+   ACCIONES
+========================== */
+
+.acciones{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+}
+
+/* ==========================
+   SEPARADOR
+========================== */
+
+.separador{
+
+    flex-basis:100%;
+
+    height:0;
+}
+
+/* ==========================
+   MÓVIL
+========================== */
+
+@media (max-width:768px){
+
+    .container{
+
+        padding:10px;
+    }
+
+    .panel{
+
+        padding:12px;
+    }
+
+    .panel-principal{
+
+        flex-direction:column;
+
+        align-items:stretch;
+    }
+
+    .acciones{
+
+        flex-direction:column;
+    }
+
+    .acciones button{
+
+        width:100%;
+    }
+
+    button{
+
+        width:100%;
+    }
+
+    .fila-verbos{
+
+        flex-direction:column;
+    }
+
+    .campo{
+
+        width:100%;
+    }
+
+    input[type=number]{
+
+        width:100%;
+    }
+
+    #listaHojas{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:480px){
+
+    #listaHojas{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+
+
+/* ==========================
+  tABLA ESTUDIO MÓVIL
+========================== */
+
+@media (max-width:768px){
+
+    .cabecera-estudio{
+
+        display:none;
+    }
+
+    .fila-estudio{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:6px;
+
+        border-radius:10px;
+
+        margin-bottom:10px;
+
+        padding:12px;
+    }
+}
+
+
+
+
+/* ==========================
+  TABLA DE ESTUDIOS
+========================== */
+
+
+.tabla-estudio{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2px;
+}
+
+.cabecera-estudio{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1fr
+        1fr;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:12px;
+
+    font-weight:bold;
+}
+
+.fila-estudio{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1fr
+        1fr;
+
+    background:white;
+
+    padding:10px;
+
+    border-bottom:
+        1px solid #ddd;
+}
+
+.fila-estudio:nth-child(even){
+
+    background:#f8fafc;
+}

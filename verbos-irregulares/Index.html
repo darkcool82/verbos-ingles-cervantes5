@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="theme-color"
+        content="#2563eb">
+
+    <title>
+        Verbos Irregulares Inglés
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <link
+        rel="manifest"
+        href="manifest.json">
+
+    <script src="xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>
+                Verbos Irregulares
+            </h1>
+
+            <p class="subtitulo">
+                Inglés · Modo Estudio
+            </p>
+
+        </header>
+
+        <section class="panel panel-principal">
+
+           <button
+    		id="btnEstudiar"
+    		class="btn-principal">
+
+    		📘 ESTUDIAR HOJAS SELECCIONADAS
+
+	</button>
+
+	<button
+    		id="btnInstalar"
+    		class="btn-instalar"
+		hidden>
+     		📲 Instalar aplicación
+
+	</button>
+
+            <div class="separador"></div>
+
+            <input
+                type="file"
+                id="excelFile"
+                accept=".xlsx,.xls">
+
+            <button
+                id="btnImportar">
+
+                Importar otro Excel
+
+            </button>
+
+        </section>
+
+        <section class="panel">
+
+            <h2>
+                Seleccionar hojas
+            </h2>
+
+            <div id="listaHojas">
+
+                <!-- generado desde JS -->
+
+            </div>
+		<div id="resumenSeleccion"></div>
+        </section>
+
+        <section class="panel">
+
+            <h2>
+                Configuración
+            </h2>
+
+            <div class="config">
+
+                <div>
+
+                    <label>
+
+                        Número de preguntas
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="cantidadPreguntas"
+                        min="1"
+                        value="10">
+
+                </div>
+
+                <div>
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="usarTemporizador">
+
+                        Usar temporizador
+
+                    </label>
+
+                </div>
+
+            </div>
+
+            <button
+                id="btnComenzar">
+
+                Comenzar Test
+
+            </button>
+
+        </section>
+
+        <section class="panel">
+
+            <h2>
+                Herramientas
+            </h2>
+
+            <div class="acciones">
+
+                <button
+                    id="btnRepetirErrores">
+
+                    Repetir errores
+
+                </button>
+
+                <button
+                    id="btnExportarErrores">
+
+                    Exportar errores
+
+                </button>
+
+                <button
+                    id="btnExportarResultados">
+
+                    Exportar resultados
+
+                </button>
+
+                <button
+                    id="btnHistorico">
+
+                    Histórico
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div id="temporizador">
+
+            </div>
+
+            <div id="resultado">
+
+            </div>
+
+        </section>
+
+        <main id="contenido">
+
+        </main>
+
+    </div>
+
+    <script src="app.js"></script>
+
+<script>
+
+if ("serviceWorker"
+    in navigator) {
+
+    navigator
+    .serviceWorker
+    .register("sw.js")
+
+    .then(() => {
+
+        console.log(
+            "Service Worker registrado"
+        );
+
+    })
+
+    .catch(error => {
+
+        console.error(
+            error
+        );
+
+    });
+
+}
+
+</script>>
+
+</body>
+
+</html>
